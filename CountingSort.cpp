@@ -1,7 +1,7 @@
 #include <iostream>
 #include <random>
 
-void CountingSort(int len, int arr) {
+void CountingSort(int len, int *arr) {
     int *temp = new int[len];
     int min = arr[0], max = arr[0], newSize;
     for (int i = 1; i < len; ++i) { //max/min
