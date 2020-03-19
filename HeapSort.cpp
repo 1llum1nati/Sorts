@@ -17,6 +17,7 @@ void heapify(T arr, int len, int i) {
 		std::swap(arr[i], arr[largest]);
 		heapify(arr, len, largest);
 	}
+	
 }
 
 template<typename T>
@@ -33,7 +34,7 @@ void HeapSort(int len, T arr) {
 
 int main() {
 	std::random_device gen;
-    std::uniform_real_distribution<> uid(1, 10);
+    std::uniform_real_distribution<> uid(5, 10);
     int size = uid(gen);
     float arr[size];
     for(int i = 0; i != size; ++i)
