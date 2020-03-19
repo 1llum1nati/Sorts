@@ -2,7 +2,7 @@
 #include <random>
 
 template<typename T>
-void CountingSort(int len, T arr) {
+void InsertionSort(int len, T arr) {
     for(int i = 1; i < len; i++)
         for(int j = i; j > 0 && arr[j-1] > arr[j]; j--)
             std::swap(arr[j-1], arr[j]);
