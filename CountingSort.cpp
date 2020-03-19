@@ -33,6 +33,9 @@ void CountingSort(int len, int *arr) {
 
     for (int i = 0; i < len; ++i)
         arr[i] = temp[i];
+
+    delete[] unique;
+    delete[] temp;
 }
 
 int main() {
