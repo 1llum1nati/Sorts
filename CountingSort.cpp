@@ -1,5 +1,6 @@
-#include <iostream>
+﻿#include <iostream>
 #include <random>
+#include <cstring>
 
 void CountingSort(int len, int *arr) {
     int *temp = new int[len];
@@ -13,6 +14,8 @@ void CountingSort(int len, int *arr) {
     newSize = max - min + 1;
 
     int *unique = new int[newSize]; 
+    memset(unique, 0, newSize*sizeof(int));
+
     for (int i = min; i < len + min; ++i) { //подсчёт встречаемости каждого числа
         unique[arr[i-min]-min]++;  
     }
