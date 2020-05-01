@@ -13,7 +13,7 @@ void CountingSort(int len, int *arr) {
     }
     newSize = max - min + 1;
 
-    int *unique = new int[newSize]; 
+    int *unique = new int[newSize + 1]; 
     memset(unique, 0, newSize*sizeof(int));
 
     for (int i = min; i < len + min; ++i) { //подсчёт встречаемости каждого числа
